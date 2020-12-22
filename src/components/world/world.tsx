@@ -3,7 +3,6 @@ import { Canvas } from "react-three-fiber";
 import { Color } from "three";
 import { Controls } from "../controls/Controls";
 import { Effects } from "../effects/Effects";
-import { Homepage } from "../homepage/Homepage";
 import { Lighting } from "../lighting/Lighting";
 import { Urkt } from "../urkt/Urkt";
 
