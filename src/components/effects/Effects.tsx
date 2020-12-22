@@ -1,13 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import {
-  Bloom,
-  DepthOfField,
-  EffectComposer,
-  Noise,
-  // DotScreen,
-  Scanline,
-  Vignette
-} from "react-postprocessing";
+import React from "react";
+import { EffectComposer, Noise } from "react-postprocessing";
 
 export const Effects = () => {
   return (
@@ -21,13 +13,7 @@ export const Effects = () => {
         height={720}
         width={720}
       /> */}
-      <Noise opacity={0.08} />
-      <Bloom
-        luminanceThreshold={50}
-        luminanceSmoothing={100}
-        height={300}
-        intensity={10}
-      />
+      <Noise opacity={0.02} />
     </EffectComposer>
   );
 };

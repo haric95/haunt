@@ -25,7 +25,7 @@ export const Controls = () => {
   }, []);
 
   useFrame(() => {
-    camera.position.x = 0 - (mousePosition.x - size.width / 2) * 0.005;
+    camera.position.x = -4 - (mousePosition.x - size.width / 2) * 0.005;
     camera.position.y = 1 - (mousePosition.y - size.height / 2) * 0.005;
     camera.position.z =
       5 - 4 * Math.sin((mousePosition.x * 0.01 - camera.position.y) / 10);

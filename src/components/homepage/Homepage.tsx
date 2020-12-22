@@ -16,7 +16,7 @@ export const Homepage = () => {
 
   return (
     <>
-      <Sphere ref={ref} args={[1, 20, 20]}>
+      <Sphere ref={ref} args={[1, 50, 50]}>
         <meshStandardMaterial
           color="red"
           attach="material"
