@@ -1,4 +1,4 @@
-import { Box, Sphere } from "drei";
+import { Sphere } from "drei";
 import React, { useRef } from "react";
 import { useFrame, useThree } from "react-three-fiber";
 import { Color } from "three";
