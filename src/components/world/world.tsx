@@ -5,6 +5,7 @@ import { Controls } from "../controls/Controls";
 import { Effects } from "../effects/Effects";
 import { Lighting } from "../lighting/Lighting";
 import { Urkt } from "../urkt/Urkt";
+import { Hand } from '../hand/Hand';
 
 export const World = () => {
   return (
@@ -15,7 +16,8 @@ export const World = () => {
       <Lighting />
       {/* <Homepage /> */}
       <Suspense fallback={null}>
-        <Urkt />
+        {/* <Urkt />*/}
+        <Hand />
       </Suspense>
       <Effects />
     </Canvas>

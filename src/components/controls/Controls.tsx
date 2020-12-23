@@ -25,10 +25,10 @@ export const Controls = () => {
   }, []);
 
   useFrame(() => {
-    camera.position.x = -4 - (mousePosition.x - size.width / 2) * 0.005;
-    camera.position.y = 1 - (mousePosition.y - size.height / 2) * 0.005;
+    camera.position.x = -0.2 - (mousePosition.x - size.width / 2) * 0.001;
+    camera.position.y = 0.2 - (mousePosition.y - size.height / 2) * 0.001;
     camera.position.z =
-      5 - 4 * Math.sin((mousePosition.x * 0.01 - camera.position.y) / 10);
+      0.5 - 0.8 * Math.sin((mousePosition.x * 0.01 - camera.position.y) / 10);
     camera.lookAt(new Vector3(0, 0, 0));
   });
 
