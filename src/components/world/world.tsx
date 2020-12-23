@@ -3,9 +3,8 @@ import { Canvas } from "react-three-fiber";
 import { Color } from "three";
 import { Controls } from "../controls/Controls";
 import { Effects } from "../effects/Effects";
+import { Hand } from "../hand/Hand";
 import { Lighting } from "../lighting/Lighting";
-import { Urkt } from "../urkt/Urkt";
-import { Hand } from '../hand/Hand';
 
 export const World = () => {
   return (

@@ -1,7 +1,7 @@
-import { Html, MeshDistortMaterial, MeshWobbleMaterial, useGLTF } from "drei";
+import { Html, MeshDistortMaterial, useGLTF } from "drei";
 import React, { useRef } from "react";
 import { useFrame, useThree } from "react-three-fiber";
-import { Material, Mesh, MeshBasicMaterial, MeshStandardMaterial } from "three";
+import { Mesh, MeshStandardMaterial } from "three";
 
 const ASSET_PATH = "/assets/hand.glb";
 
@@ -18,26 +18,11 @@ export const Hand = () => {
     "3": useRef<Mesh | null>(null)
   };
 
-  const material = useRef<MeshStandardMaterial>(
-    new MeshStandardMaterial({
-      wireframe: true,
-      color: "pink",
-      metalness: 2
-    })
-  );
-
   const material2 = useRef<MeshStandardMaterial>(
     new MeshStandardMaterial({
       wireframe: true,
       color: "pink",
       metalness: 2
-    })
-  );
-  const material3 = useRef<MeshStandardMaterial>(
-    new MeshStandardMaterial({
-      wireframe: true,
-      color: "aqua",
-      metalness: 0.9
     })
   );
 
