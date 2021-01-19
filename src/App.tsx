@@ -4,6 +4,7 @@ import './index.scss';
 import { Router } from '@reach/router';
 import { About } from './pages/About';
 import { AppPath } from './constants';
+import { Artists } from './pages/Artists';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navigation />
       <Router>
         <About path={AppPath.HOME} />
+        <Artists path={AppPath.ARTISTS} />
       </Router>
     </div>
   );

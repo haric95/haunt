@@ -1,0 +1,37 @@
+.artists {
+  .title {
+    font-size: 80px;
+    letter-spacing: 8px;
+  }
+
+  .content {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .artist-column {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-right: 160px;
+    width: 300px;
+
+    &.reverse {
+      flex-direction: column-reverse;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .title {
+      font-size: 24px;
+      font-family: $barlow-font;
+    }
+
+    .description {
+      font-size: 16px;
+    }
+  }
+}

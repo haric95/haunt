@@ -1,4 +1,6 @@
+import { navigate } from '@reach/router';
 import React from 'react';
+import { AppPath } from '../../constants';
 
 type NavigationButtonProps = {
   onClick?: () => void;
@@ -23,9 +25,27 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({
 export const Navigation = () => {
   return (
     <div className="navigation">
-      <NavigationButton onClick={() => {}}>About us</NavigationButton>
-      <NavigationButton onClick={() => {}}>Artists</NavigationButton>
-      <NavigationButton onClick={() => {}}>Shop</NavigationButton>
+      <NavigationButton
+        onClick={() => {
+          navigate(AppPath.HOME);
+        }}
+      >
+        About us
+      </NavigationButton>
+      <NavigationButton
+        onClick={() => {
+          navigate(AppPath.ARTISTS);
+        }}
+      >
+        Artists
+      </NavigationButton>
+      <NavigationButton
+        onClick={() => {
+          navigate(AppPath.HOME);
+        }}
+      >
+        Shop
+      </NavigationButton>
       <div className="rules">
         {Array(20)
           .fill(0)
