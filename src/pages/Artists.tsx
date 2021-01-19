@@ -8,7 +8,7 @@ export const Artists: React.FC<RouteComponentProps> = () => {
       <h1 className="title">Artists</h1>
       <div className="content">
         <div className="artist-column">
-          <img src="https://f4.bcbits.com/img/a3996750605_16.jpg" />
+          <img src="https://f4.bcbits.com/img/a3996750605_16.jpg" alt="urkt" />
           <h2 className="title">Urkt</h2>
           <p className="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -17,6 +17,7 @@ export const Artists: React.FC<RouteComponentProps> = () => {
             aliquip ex ea commodo consequat.
           </p>
           <iframe
+            title="1"
             style={{ border: 0, width: '100%', height: '42px' }}
             src="https://bandcamp.com/EmbeddedPlayer/album=1775995423/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
             seamless
@@ -25,7 +26,7 @@ export const Artists: React.FC<RouteComponentProps> = () => {
           </iframe>
         </div>
         <div className="artist-column reverse">
-          <img src="https://f4.bcbits.com/img/a3996750605_16.jpg" />
+          <img src="https://f4.bcbits.com/img/a3996750605_16.jpg" alt="urkt" />
           <h2 className="title">Urkt 2™</h2>
           <p className="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -34,6 +35,7 @@ export const Artists: React.FC<RouteComponentProps> = () => {
             aliquip ex ea commodo consequat.
           </p>
           <iframe
+            title="2"
             style={{ border: 0, width: '100%', height: '42px' }}
             src="https://bandcamp.com/EmbeddedPlayer/album=1775995423/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
             seamless
