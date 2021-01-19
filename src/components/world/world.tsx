@@ -16,7 +16,7 @@ export const World = () => {
       {/* <Homepage /> */}
       <Suspense fallback={null}>
         {/* <Urkt />*/}
-        <Hand />
+        {/* <Hand /> */}
       </Suspense>
       <Effects />
     </Canvas>

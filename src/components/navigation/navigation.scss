@@ -1,0 +1,33 @@
+.navigation {
+  background-color: $teal-600;
+  display: flex;
+  flex-direction: column;
+  height: 120%;
+  left: -25px;
+  padding: 50px 0;
+  position: fixed;
+  top: -20px;
+  transform: rotate(2deg);
+  width: 300px;
+  z-index: 1;
+
+  .navigation-button {
+    background-color: $gray-900;
+    color: white;
+    margin-bottom: 20px;
+    width: 70%;
+
+    &.selected {
+      color: $orange-600;
+    }
+  }
+
+  .rules {
+    .rule {
+      border: 3px solid $orange-600;
+      height: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+}

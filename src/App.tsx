@@ -1,11 +1,17 @@
-import React from "react";
-import "./App.css";
-import { World } from "./components/world/world";
+import React from 'react';
+import { Navigation } from './components/navigation/Navigation';
+import './index.scss';
+import { Router } from '@reach/router';
+import { About } from './pages/About';
+import { AppPath } from './constants';
 
 const App = () => {
   return (
     <div className="App">
-      <World />
+      <Navigation />
+      <Router>
+        <About path={AppPath.HOME} />
+      </Router>
     </div>
   );
 };

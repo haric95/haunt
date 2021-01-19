@@ -1,0 +1,64 @@
+$gray-50: #f6fafa;
+$gray-600: #8e9999;
+$gray-900: #141616;
+
+$orange-600: #ffb303;
+
+$teal-600: #60dbd5;
+
+$imbue-font: 'Imbue', 'Helvetica', 'serif';
+$barlow-font: 'Barlow', sans-serif;
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+::selection {
+  background: $teal-600; /* WebKit/Blink Browsers */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $gray-50;
+  font-family: $imbue-font;
+}
+
+p {
+  color: $gray-50;
+  font-family: $barlow-font;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font-family: $imbue-font;
+  font-size: 24px;
+  letter-spacing: 1.4px;
+  padding: 16px 32px;
+  transition: transform ease-in-out 0.25s;
+
+  &:hover {
+    transform: translateX(25px);
+  }
+}
+
+.App {
+  background-color: $gray-900;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  width: 100vw;
+}
+
+// pages
+@import './pages/about.scss';
+
+// components
+@import './components/navigation/navigation.scss';
+@import './components/page/page.scss';
