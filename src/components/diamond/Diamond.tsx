@@ -1,22 +1,13 @@
-import { Html, MeshDistortMaterial, useGLTF } from 'drei';
+import { MeshDistortMaterial, useGLTF } from 'drei';
 import React, { useRef } from 'react';
-import { useFrame, useThree } from 'react-three-fiber';
 import { Mesh, MeshStandardMaterial } from 'three';
 
-const ASSET_PATH = '/assets/hand.glb';
+const ASSET_PATH = '/assets/diamond.glb';
 
 export const Hand = () => {
   const { scene } = useGLTF(ASSET_PATH);
 
-  const { clock } = useThree();
-
-  const handMesh = useRef<Mesh | null>(null);
-
-  const handMeshs = {
-    '1': useRef<Mesh | null>(null),
-    '2': useRef<Mesh | null>(null),
-    '3': useRef<Mesh | null>(null),
-  };
+  const diamondMesh = useRef<Mesh | null>(null);
 
   const material2 = useRef<MeshStandardMaterial>(
     new MeshStandardMaterial({
@@ -28,25 +19,19 @@ export const Hand = () => {
 
   scene.traverse(object => {
     if ('isMesh' in object) {
-      handMesh.current = object;
+      diamondMesh.current = object;
     }
   });
-
-  // useFrame(() => {
-  //   if (handMesh.current) {
-  //     handMesh.current.position.y = Math.sin(clock.elapsedTime) / 20;
-  //   }
-  // });
 
   return (
     <group>
       {/* <primitive object={scene} position={[0, 0, 0]} /> */}
-      {handMesh.current && (
+      {diamondMesh.current && (
         <>
           <mesh
-            geometry={handMesh.current.geometry}
+            geometry={diamondMesh.current.geometry}
             material={material2.current}
-            ref={handMeshs['1']}
+            ref={diamondMesh}
           >
             <MeshDistortMaterial
               attach="material"
